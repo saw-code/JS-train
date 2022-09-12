@@ -18,3 +18,7 @@ myCity.cityGreeting()
 // }
 
 // myCity.cityGreeting()
+
+// МЕТОД VS СВОЙСТВА ОБЪЕКТОВ
+// myCity.city // доступ к значению свойства
+// myCity.cityGreeting() // вызов метода
