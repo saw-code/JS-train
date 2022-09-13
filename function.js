@@ -48,3 +48,38 @@
 // console.log(myFn(10, 3))
 
 // Ф-ция возвращает значение undefined если нет инструкции return
+
+
+
+// ----------------------
+// ПЕРЕДАЧА ЗНАЧЕНИЙ ПО ССЫЛКЕ
+
+// const personOne = {
+//   name: 'Bob',
+//   age: 21
+// }
+
+// function increasePersonAge(person) {
+//   person.age += 1
+//   return person
+// }
+
+// increasePersonAge(personOne)
+// console.log(personOne.age)
+// внутри ф-ции не рекомендуется мутировать внешние объекты
+// что делать в таком случае? Мы можем внутри ф-ции создавать копии объектов
+
+// const personOne = {
+//   name: 'Bob',
+//   age: 21
+// }
+
+// function increasePersonAge(person) {
+//   const updatedPerson = Object.assign({}, person)
+//   updatedPerson.age += 1
+//   return updatedPerson
+// }
+
+// const updatedPersonOne = increasePersonAge(personOne)
+// console.log(personOne.age)
+// console.log(updatedPersonOne.age)
